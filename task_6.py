@@ -12,3 +12,19 @@ print('Задача 6. Спецшифр')
 # Пример:
 # Введите строку: ssbbbsssbc
 # Самая длинная последовательность: 3
+
+text = input("Вdедите строку: ")
+s_count = 0
+longest = 0
+
+for sym in text:
+    if sym == 's':
+        s_count += 1
+    else:
+        if s_count > longest:
+            longest = s_count
+        s_count = 0
+
+
+print(longest)
+
