@@ -9,29 +9,27 @@ print('Задача 9. Коровы')
 # Свободные и занятые обозначаются строкой из букв a и b,
 # где a - свободное стойло, b - занятое.
 # 
-# Пользователь вводит строку из 10 символов a и b.
+# Пользователь вводит строку из 10 символов a и b. aababbabab
 # Необходимо определить, сколько в итоге будет произведено молока за день.
 
-# text = input("Обозначьте занятость стойл (a - свободное стойло, b - занятое): ")
-# text = 'bbbbbbbbbb'
-# milk_vol = 0
-#
-# for stall_num, sym in enumerate(text, 1):
-# 	if sym == 'b':
-# 		milk_vol += stall_num * 2
-#
-# print(f"За день будет произведено {milk_vol} литров молока.")
+text = input("Обозначьте занятость стойл (a - свободное стойло, b - занятое): ")
+milk_vol = 0
+
+for stall_num, sym in enumerate(text, 1):
+	if sym == 'b':
+		milk_vol += stall_num * 2
+
+print(f"За день будет произведено {milk_vol} литров молока.")
 
 #############################################
 
 # text = input("Обозначьте занятость стойл (a - свободное стойло, b - занятое): ")
-text = 'abbbbbbbbb'
-milk_vol = 0
-stall_num = 1
-
-for sym in text:
-	if sym == 'b':
-		milk_vol += stall_num * 2
-		stall_num += 1
-
-print(f"За день будет произведено {milk_vol} литров молока.")
+# milk_vol = 0
+# stall_num = 1
+#
+# for sym in text:
+# 	if sym == 'b':
+# 		milk_vol += stall_num * 2
+# 	stall_num += 1
+#
+# print(f"За день будет произведено {milk_vol} литров молока.")
