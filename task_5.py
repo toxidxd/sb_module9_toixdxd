@@ -27,3 +27,24 @@ print('Задача 5. Марсоход 2')
 # [Программа]: Марсоход находится на позиции 5, 20, введите команду:
 # [Оператор]: W
 # [Программа]: Марсоход находится на позиции 5, 20, введите команду:
+
+# Координаты старта
+coord_x = 8
+coord_y = 10
+
+print("\nУправление: W - север, S - юг, А - запад, D - восток.\n")
+
+while True:
+    command = input(f"Марсоход находится на позиции {coord_x}, {coord_y}, введите команду: ")
+    if command == "W" or command == "w":
+        if coord_y + 1 <= 20:
+            coord_y += 1
+    elif command == "S" or command == "s":
+        if coord_y - 1 >= 1:
+            coord_y -= 1
+    elif command == "A" or command == "a":
+        if coord_x - 1 >= 1:
+            coord_x -= 1
+    elif command == "D" or command == "d":
+        if coord_x + 1 <= 15:
+            coord_x += 1
