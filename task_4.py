@@ -18,3 +18,12 @@ print('Задача 4. Театр')
 # ======= *** =======
 # ======= *** =======
 # ======= *** =======
+
+row_cnt = int(input("Введите кол-во рядов: "))
+seat_cnt = int(input("Введите кол-во сидений ряду: "))
+interval = int(input("Введите кол-во метров между рядами: "))
+
+for row in range(row_cnt):
+    print("=" * seat_cnt, end=" ")
+    print("*" * interval, end=" ")
+    print("=" * seat_cnt)  # или (необязательно) print("=" * seat_cnt, end="\n")
