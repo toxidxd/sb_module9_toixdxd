@@ -21,3 +21,26 @@ print('Задача 10. Метод бутерброда')
 # Слово: | s | a | n | d | w | i | c | h |
 #
 # Шифр:  | s | h | a | c | n | i | d | w |
+
+# enc_text = input("Введите зашифрованное сообщение: ")
+# key = [1, 3, 5, 7, 8, 6, 4, 2]
+#
+# for position in key:
+# 	print(f"Расшифрованное сообщение: {enc_text[position - 1]}", end='')
+
+############################
+
+enc_text = input("Введите зашифрованное сообщение: ")
+
+left_part = ""
+right_part = ""
+sym_count = 1
+
+for sym in enc_text:
+	if sym_count % 2 == 1:
+		left_part += sym
+	else:
+		right_part = sym + right_part
+	sym_count += 1
+
+print('Расшифрованное слово', left_part + right_part)
