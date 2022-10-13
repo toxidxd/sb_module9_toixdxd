@@ -25,6 +25,4 @@ for sym in text:
             longest = s_count
         s_count = 0
 
-
 print(longest)
-
