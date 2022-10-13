@@ -14,3 +14,20 @@ print('Задача 3. Кривой мессенджер')
 # Пример:
 # Введите текст: Пр*ивет как дела
 # Символ ‘*’ стоит на позиции 3
+
+text = input("Введите текст: ")
+
+for sym in range(len(text)):
+    if text[sym] == "*":
+        print(f"Символ ‘*’ стоит на позиции {sym + 1}")
+        break
+
+
+# text = input("Введите текст: ")
+# pos_count = 1
+#
+# for sym in text:
+#     if sym == "*":
+#         print(f"Символ ‘*’ стоит на позиции {pos_count}")
+#         break
+#     pos_count += 1
