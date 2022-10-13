@@ -43,4 +43,5 @@ for sym in enc_text:
 		right_part = sym + right_part
 	sym_count += 1
 
-print('Расшифрованное слово', left_part + right_part)
+dec_text = left_part + right_part
+print(f"Расшифрованное сообщение: {dec_text}")
