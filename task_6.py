@@ -20,9 +20,9 @@ longest = 0
 for sym in text:
     if sym == 's':
         s_count += 1
-    else:
         if s_count > longest:
             longest = s_count
+    else:
         s_count = 0
 
 print(longest)
